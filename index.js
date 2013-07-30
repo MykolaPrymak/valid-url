@@ -11,7 +11,7 @@
                 return false;
             }
             try {
-                return uri;
+                return (decodeURI(uri)) ? uri : false;
             } catch (e) {
                 /*
                 if (e instanceof URIError) {
